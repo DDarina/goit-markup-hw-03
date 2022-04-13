@@ -13,6 +13,21 @@ body {
     background-color: var(--acent-color-background-text);
 }
 
+.conteiner {
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
 .link {
     text-decoration-color: none;
     font-style: normal;
@@ -24,8 +39,16 @@ body {
     list-style-type:none;
 }
 
+
+
 /* header */
     /* logo */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+}
 
 .header-logo {
     font-family: 'Raleway';
@@ -74,6 +97,7 @@ body {
 
 .hero {
     background-color: var(--background-color-dark);
+    padding: 200px 452px;
 }
 
 .hero-title {
@@ -83,7 +107,9 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--acent-color-background-text)
+    color: var(--acent-color-background-text);
+    width: 696px;
+    margin-bottom: 30px;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -103,6 +129,14 @@ body {
     cursor: pointer;
 }
 /* benefits*/
+.benefits {
+    padding-top: 94px;
+    padding-left: 215px;
+    padding-bottom: 94px;
+}
+.benefits-list {
+    margin-bottom: 94px;
+}
 
 .benefits-title {
     font-weight: 700;
@@ -110,7 +144,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--second-color-text) ;
+    color: var(--second-color-text);
+    margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -121,18 +156,25 @@ body {
 
 /* our-work */
 
+.our-work {
+    padding-left: 215px;
+    padding-bottom: 94px;
+}
+
 .our-work-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-color-text);
+    margin-bottom: 50px;
 }
 
 /* teamt */
 
 .teamt {
     background-color: var(--background-color-grey);
+    padding: 94px 215px;
 }
 
 .teamt-item {
@@ -145,6 +187,7 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-color-text); 
+    margin-bottom: 50px;
 }
 
 .teamt-name {
@@ -153,12 +196,23 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-color-text);
+    margin-bottom: 10px;
 }
 
 .teamt-profession {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.teamt-item {
+    background-color: var(--acent-color-background-text);
+    width: 270px;
+    height: 368px;
+}
+
+.teamt-foto {
+    padding-bottom: 30px;
 }
 
 
@@ -207,6 +261,9 @@ body {
 
 .footer {
     background-color: var(--background-color-dark);
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     font-family: 'Raleway';
