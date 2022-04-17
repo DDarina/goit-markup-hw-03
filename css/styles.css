@@ -13,6 +13,16 @@ body {
     background-color: var(--acent-color-background-text);
 }
 
+img {
+display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .conteiner {
     width: 1200px;
     padding-left: 15px;
@@ -48,6 +58,7 @@ ul, ol {
     padding-top: 24px;
     padding-bottom: 25px;
     padding-left: 215px;
+    border: 1px solid #ECECEC;
 }
 
 .header .conteiner {
@@ -100,9 +111,12 @@ ul, ol {
 
 .header-list-contact {
     display: flex;
-    margin-left: auto;
+    margin-left: 215px;
 }
 
+.header-mail {
+    margin-right: 50px;
+}
 
 .header-item:not(last-child) {
 margin-right: 50px;
@@ -170,7 +184,6 @@ margin-right: 50px;
 }
 
 .benefits-list {
-    margin-bottom: 94px;
     display: flex;
     align-content: space-between;
 }
@@ -178,7 +191,7 @@ margin-right: 50px;
 .benefits-item:not(last-child) {
     margin-right: 30px;
 }
-
+    
 
 .benefits-title {
     font-weight: 700;
@@ -251,6 +264,8 @@ margin-right: 50px;
 }
 .teamt-list {
     display: flex;
+    margin-left: -30px;
+
 }
 .teamt-name {
     font-weight: 500;
@@ -271,28 +286,45 @@ margin-right: 50px;
     background-color: var(--acent-color-background-text);
     width: 270px;
     height: 368px;
+    left: 215px;
+    top: 1635px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100%-120px)/4);
+    margin-left: 30px;
 }
 
-.teamt-item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .teamt-foto {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 
 
 /* portfolio */
 
+.portfolio .conteiner {
+    margin-right: 54px;
+    padding-bottom: 100px;
+
+}
+
 .portfolio-title, .project-title {
     display: none;
+
 }
 
 .portfolio-list {
     display: flex;
-    margin-bottom: 50px;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 50px;
+
 }
+
 
 .portfolio-btn:hover {
     background-color: var(--acent-color);
@@ -320,18 +352,16 @@ margin-right: 50px;
 .project-list {
     display: flex;
     flex-wrap: wrap;
-}
-
-.project-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-
-.project-item:nth-child(-n+6){
-    margin-bottom: 30px;
+    justify-content: end;
+    margin-left: -24px;
+    margin-bottom: -24px;
 }
 
 .project-item {
     padding-bottom: 20px;
+    width: calc(100%/3 -24px);
+    margin-left: 24px;
+    margin-bottom: 24px;
 }
 
 .project-name {
@@ -340,12 +370,20 @@ margin-right: 50px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:  var(--second-color-text);
+    padding-left: 24px;
 }
+
+.card-border {
+    border: 1px;
+    border: 1px solid #EEEEEE;
+}
+
 
 .project-kind {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    padding-left: 24px;
 }
 
 /* footer */
