@@ -190,7 +190,10 @@ margin-right: 50px;
 .benefits-item:not(:last-child) {
     margin-right: 30px;
 }
-    
+
+.benefits-item {
+    width: 270px;
+}
 
 .benefits-title {
     font-weight: 700;
@@ -304,7 +307,6 @@ margin-right: 50px;
 /* portfolio */
 
 .portfolio .conteiner {
-    margin-right: 54px;
     padding-bottom: 100px;
 
 }
